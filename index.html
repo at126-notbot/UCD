@@ -39,7 +39,7 @@
 <model-viewer 
     id="UCD"
     src="https://at126-notbot.github.io/UCD/UCD.glb"
-    scale="0.001 0.001 0.001"
+    scale="0.0001 0.0001 0.0001"
     camera-controls
     camera-orbit="-52deg 64deg 38m" field-of-view="30deg"
     ar
@@ -73,13 +73,13 @@ const sea2Slider = document.querySelector("#sea2");
 modelViewer.interactionPrompt = 'none';
 
 sea1Slider.addEventListener("input", (event) => {
-  modelViewer.animationName = 'sea';
+  modelViewer.animationName = 'CubeAction';
   modelViewer.currentTime = event.target.value;
   modelViewer.pause();
 });
 
 sea2Slider.addEventListener('input', event => {
-  modelViewer.animationName = 'sea';
+  modelViewer.animationName = 'CubeAction';
   modelViewer.currentTime = event.target.value;
   modelViewer.pause();
 });
